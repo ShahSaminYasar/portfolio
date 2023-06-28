@@ -1240,10 +1240,17 @@ section {
   background: #030303;
   min-height: max-content;
   padding: 50px 10px;
+  overflow-x: hidden !important;
 }
 
 .brands-owl-carousel .owl-dots {
   display: none;
+}
+
+.brands_img_container img {
+  width: 100%;
+  max-width: 100px;
+  margin: 0 auto;
 }
 
 /* Contact */
