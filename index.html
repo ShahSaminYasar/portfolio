@@ -42,6 +42,7 @@
         </button>
         <nav class="navlinks">
           <ul>
+            <li><a href="#intro">Intro</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
@@ -55,7 +56,7 @@
 
     <!-- Main -->
     <main id="main">
-      <section class="front">
+      <section id="intro" class="front">
         <video
           autoplay
           muted
@@ -158,7 +159,9 @@
                           A dynamic app where an user can give MCQ tests based
                           on his lessons.
                         </p>
-                        <a href="#">Visit Website</a>
+                        <button onclick="viewPortfolio(0, 0)">
+                          View Project
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -172,7 +175,9 @@
                       <div class="carousel-item-content-text">
                         <h3>TODO Tasks</h3>
                         <p>A dynamic system for adding upcoming works/tasks.</p>
-                        <a href="#">Visit Website</a>
+                        <button onclick="viewPortfolio(0, 4)">
+                          View Project
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -189,7 +194,9 @@
                           It is a RPG game based on a mission to defeat a
                           dragon.
                         </p>
-                        <a href="#">Visit Website</a>
+                        <button onclick="viewPortfolio(0, 5)">
+                          View Project
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -203,7 +210,9 @@
                       <div class="carousel-item-content-text">
                         <h3>Foodie</h3>
                         <p>A static restaurent website.</p>
-                        <a href="#">Visit Website</a>
+                        <button onclick="viewPortfolio(0, 3)">
+                          View Project
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -217,7 +226,9 @@
                       <div class="carousel-item-content-text">
                         <h3>Dance Website</h3>
                         <p>A static website expressing a dance company.</p>
-                        <a href="#">Visit Website</a>
+                        <button onclick="viewPortfolio(0, 6)">
+                          View Project
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -504,6 +515,10 @@
               <div class="portfolio_viewer">
                 <span id="close_pv_btn" onclick="closePv()">&times;</span>
               </div>
+              <div class="video_viewer">
+                <span id="close_pv_btn" onclick="closeVv()">&times;</span>
+                <span class="loading_text lt2">Loading...</span>
+              </div>
               <div
                 class="web_gallery"
                 data-aos="fade"
@@ -538,7 +553,7 @@
       </section>
       <!-- Videos Showcase -->
       <section id="video_showcase">
-        <span class="loading_text">Loading...</span>
+        <span class="loading_text lt1">Loading...</span>
         <div class="container videos-container">
           <div
             id="carousel2"
@@ -576,10 +591,10 @@
             </button>
           </div>
         </div>
-        <span class="info_text"
+        <!-- <span class="info_text"
           ><i class="fa-solid fa-circle-info"></i> To watch a video, you may
           need to set it to fullscreen mode.</span
-        >
+        > -->
       </section>
       <!-- Services -->
       <section id="services">
@@ -690,17 +705,36 @@
       <!-- Brands -->
       <section id="brands">
         <div class="container">
-          <div class="logos_carousel">
-            <div class="logos_carousel_inner">
-              <div class="logos_container">
-                <div class="logos">
-                  <img src="./media/logos/skisc.png" alt="" />
-                  <img src="./media/logos/ravetag.png" alt="" />
-                  <img src="./media/logos/mc_college.png" alt="" />
-                  <img src="./media/logos/brave_education.png" alt="" />
-                  <img src="./media/logos/praxis.png" alt="" />
-                </div>
-              </div>
+          <div class="logos_container">
+            <div class="logo_container">
+              <img src="./media/logos/skisc.png" alt="" />
+            </div>
+            <div class="logo_container">
+              <img src="./media/logos/ravetag.png" alt="" />
+            </div>
+            <div class="logo_container">
+              <img src="./media/logos/mc_college.png" alt="" />
+            </div>
+            <div class="logo_container">
+              <img src="./media/logos/brave_education.png" alt="" />
+            </div>
+            <div class="logo_container">
+              <img src="./media/logos/praxis.png" alt="" />
+            </div>
+            <div class="logo_container">
+              <img src="./media/logos/skisc.png" alt="" />
+            </div>
+            <div class="logo_container">
+              <img src="./media/logos/ravetag.png" alt="" />
+            </div>
+            <div class="logo_container">
+              <img src="./media/logos/mc_college.png" alt="" />
+            </div>
+            <div class="logo_container">
+              <img src="./media/logos/brave_education.png" alt="" />
+            </div>
+            <div class="logo_container">
+              <img src="./media/logos/praxis.png" alt="" />
             </div>
           </div>
         </div>
@@ -738,7 +772,7 @@
         <div class="container social_handles_container">
           <h4 data-aos="zoom-in-up">Handles</h4>
           <div class="social_handles">
-            <a href="#" data-aos="fade-up" data-aos-offset="200"
+            <a href="#" data-aos="fade-up"
               ><i class="fa-brands fa-instagram"></i
             ></a>
             <a href="#" data-aos="fade-up" data-aos-delay="100"

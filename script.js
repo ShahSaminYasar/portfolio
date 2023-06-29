@@ -1,6 +1,7 @@
 const header = document.getElementById("header");
 const mobileMenuBtn = document.querySelector(".mobile_menu_btn");
 const navlinks = document.querySelector(".navlinks");
+const navlink = document.querySelectorAll(".navlinks ul li a");
 const bgVideo = document.getElementById("bg_video");
 const bgImage = document.getElementById("bg_image");
 const toggleButtons = document.querySelectorAll(".toggle_button");
@@ -11,7 +12,9 @@ const photoGallery = document.querySelector(".photo_gallery");
 const videoGallery = document.querySelector(".video_gallery");
 const pfoNavBtn = document.querySelectorAll(".pfoNavBtn");
 const portfolioViewer = document.querySelector(".portfolio_viewer");
-const loadingText = document.querySelector(".loading_text");
+const videoViewer = document.querySelector(".video_viewer");
+const loadingText1 = document.querySelector(".lt1");
+const loadingText2 = document.querySelector(".lt2");
 
 // Variables
 var videoGalleryChecked = 0;
@@ -30,17 +33,30 @@ window.onscroll = () => {
   }
 };
 
+document.addEventListener("keydown", (event) => {
+  if (event.key === " ") {
+    event.preventDefault();
+  }
+});
+
 mobileMenuBtn.addEventListener("click", () => {
   navlinks.classList.toggle("active");
   mobileMenuBtn.classList.toggle("active");
+});
+
+navlink.forEach((navlink) => {
+  navlink.addEventListener("click", () => {
+    navlinks.classList.remove("active");
+    mobileMenuBtn.classList.remove("active");
+  });
 });
 
 function typeText() {
   bgVideo.style.display = "none";
   bgImage.style.display = "initial";
 
-  const logos = document.querySelector(".logos_container").cloneNode(true);
-  document.querySelector(".logos_carousel_inner").append(logos);
+  // const logos = document.querySelector(".logos_container").cloneNode(true);
+  // document.querySelector(".logos_carousel_inner").append(logos);
 
   var text =
     "Hey there, Boss! Buckle up for a thrilling introduction to the web-savvy college student who's been bitten by the coding bug. I've poured countless hours into honing my skills, crafting pixel-perfect websites that leave users in awe. Ready to inject a massive WOW factor into the online world? Let's dive into this exciting journey together!";
@@ -53,8 +69,9 @@ function typeText() {
         index++;
       } else {
         clearInterval(typeEffectInterval);
-        bgVideo.style.display = "initial";
-        bgImage.style.display = "none";
+        // Test
+        bgVideo.style.display = "none";
+        bgImage.style.display = "initial";
       }
     }, 35);
   }, 2200);
@@ -133,25 +150,40 @@ var portfolioContent = [
       desc: "Dragon Repeller is an RPG adventure game. In it, the player has to fight with monsters to gain the ability to fight with the dragon to win the game. The game has a shop, caves, and different monsters. The player has to keep up with his strength in game and earn coins to buy weapons from the shop. Overall, I hope you will enjoy playing it.",
       link: "https://shahsaminyasar.github.io/dragon-repeller",
     },
+    {
+      image: "./media/dance_website_ss.jpg",
+      name: "Dance Website",
+      languages: `<span style="background-color: orangered">HTML</span>
+                  <span style="background-color: rgb(9, 194, 255)">CSS</span>
+                  <span style="background-color: yellow">JS</span>`,
+      desc: "From a PSD design, I transformed it into this HTML website. This website is fully pixel perfect to the original design.",
+      link: "https://shahsaminyasar.github.io/dance-website",
+    },
   ],
   [
     {
-      link: "https://www.youtube.com/embed/oijf4qE1Izw",
+      thumbnail: "./media/portfolio/pv1.jpg",
+      link: "https://www.youtube.com/embed/oijf4qE1Izw?autoplay=1",
     },
     {
-      link: "https://www.youtube-nocookie.com/embed/Eu5hcjS_GKM",
+      thumbnail: "./media/portfolio/pv2.jpg",
+      link: "https://www.youtube-nocookie.com/embed/Eu5hcjS_GKM?autoplay=1",
     },
     {
-      link: "https://www.youtube.com/embed/qDoIX0esvxw",
+      thumbnail: "./media/portfolio/pv3.jpg",
+      link: "https://www.youtube.com/embed/qDoIX0esvxw?autoplay=1",
     },
     {
-      link: "https://www.youtube.com/embed/6nQTmS_BDcE",
+      thumbnail: "./media/portfolio/pv4.jpg",
+      link: "https://www.youtube.com/embed/6nQTmS_BDcE?autoplay=1",
     },
     {
-      link: "https://www.youtube.com/embed/F7rXkJm-Iyo",
+      thumbnail: "./media/portfolio/pv5.jpg",
+      link: "https://www.youtube.com/embed/F7rXkJm-Iyo?autoplay=1",
     },
     {
-      link: "https://www.youtube.com/embed/2y7VgVw8Kog",
+      thumbnail: "./media/portfolio/pv6.jpg",
+      link: "https://www.youtube.com/embed/2y7VgVw8Kog?autoplay=1",
     },
   ],
 ];
@@ -181,6 +213,7 @@ function pfoWeb() {
 function viewPortfolio(a, b) {
   portfolioViewer.innerHTML = `<span id="close_pv_btn" onclick="closePv()">&times;</span>`;
   portfolioViewer.classList.add("active");
+  document.body.style.overflowY = "hidden";
   var portfolioDataArray = portfolioContent[a];
   var portfolioDataArrayIndex = b;
   var portfolioDataset = portfolioDataArray[portfolioDataArrayIndex];
@@ -202,6 +235,7 @@ function viewPortfolio(a, b) {
 
 function closePv() {
   portfolioViewer.classList.remove("active");
+  document.body.style.overflowY = "initial";
 }
 
 function pfoGraphics(e) {
@@ -229,16 +263,11 @@ function pfoVedit(e) {
     videoGallery.classList.add("show");
     var portfolioDataset = portfolioContent[1];
     portfolioDataset.forEach((video) => {
-      const iframe = `<iframe
-                  width="100%"
-                  height="310px"
-                  src="${video.link}"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>`;
-      videoGallery.insertAdjacentHTML("beforeend", iframe);
+      const videoGalleryItem = `<div class="video_gallery_item">
+                                  <img src="${video.thumbnail}"/>
+                                  <button onclick="viewVideo('${video.link}')"><i class="fa-solid fa-circle-play"></i></button>
+                                </div>`;
+      videoGallery.insertAdjacentHTML("beforeend", videoGalleryItem);
     });
     videoGalleryChecked = 1;
   } else {
@@ -246,46 +275,76 @@ function pfoVedit(e) {
   }
 }
 
+function viewVideo(link) {
+  var iframes = videoViewer.querySelectorAll("iframe");
+  iframes.forEach((iframe) => {
+    iframe.remove();
+  });
+  videoViewer.style.display = "grid";
+  document.body.style.overflowY = "hidden";
+  loadingText2.style.display = "grid";
+  var iframe = `<iframe
+                  src="${link}"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>`;
+  videoViewer.insertAdjacentHTML("beforeend", iframe);
+  setTimeout(() => {
+    loadingText2.style.display = "none";
+  }, 3000);
+}
+
+function closeVv() {
+  // videoViewer.removeChild(videoViewer.lastChild);
+  var iframes = videoViewer.querySelectorAll("iframe");
+  iframes.forEach((iframe) => {
+    iframe.remove();
+  });
+  videoViewer.style.display = "none";
+  document.body.style.overflowY = "scroll";
+}
+
 var videoShowcaseData = [
   {
-    iframe: `<iframe
-                width="100%"
-                height="315"
-                src="https://www.youtube.com/embed/PL4uP5Ki9cE"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>`,
+    thumbnail: "./media/portfolio/vs1.jpg",
+    link: "https://www.youtube.com/embed/PL4uP5Ki9cE?autoplay=1",
   },
   {
-    iframe: `<iframe
-                width="100%"
-                height="315"
-                src="https://www.youtube.com/embed/PEBEKuTEBjU"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>`,
+    thumbnail: "./media/portfolio/vs2.jpg",
+    link: "https://www.youtube.com/embed/PEBEKuTEBjU?autoplay=1",
   },
 ];
 
 loadVideos();
 
 function loadVideos() {
-  loadingText.style.display = "block";
+  loadingText1.style.display = "block";
   var index = 1;
+
   setTimeout(() => {
     videoShowcaseData.forEach((video) => {
-      const iframeDiv = document.createElement("div");
-      iframeDiv.classList.add("iframe_div");
-      iframeDiv.innerHTML = `${video.iframe}`;
       var targetDiv = document.querySelector(`.vci${index}`);
-      targetDiv.append(iframeDiv);
-      // console.log(targetDiv);
+      const videoGalleryItem = `<div class="video_gallery_item">
+                                  <img src="${video.thumbnail}"/>
+                                  <button onclick="viewVideo('${video.link}')"><i class="fa-solid fa-circle-play"></i></button>
+                                </div>`;
+      targetDiv.insertAdjacentHTML("afterbegin", videoGalleryItem);
       index++;
-      loadingText.style.display = "none";
+      loadingText1.style.display = "none";
     });
   }, 10000);
 }
+
+// videoShowcaseData.forEach((video) => {
+
+//   const iframeDiv = document.createElement("div");
+//   iframeDiv.classList.add("iframe_div");
+//   iframeDiv.innerHTML = `${video.iframe}`;
+//   var targetDiv = document.querySelector(`.vci${index}`);
+//   targetDiv.append(iframeDiv);
+//   // console.log(targetDiv);
+//   index++;
+//   loadingText1.style.display = "none";
+// });
