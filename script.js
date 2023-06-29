@@ -69,9 +69,8 @@ function typeText() {
         index++;
       } else {
         clearInterval(typeEffectInterval);
-        // Test
-        bgVideo.style.display = "none";
-        bgImage.style.display = "initial";
+        bgVideo.style.display = "initial";
+        bgImage.style.display = "none";
       }
     }, 35);
   }, 2200);
