@@ -39,6 +39,7 @@ section {
   padding: 80px 10px;
   display: grid;
   place-items: center;
+  overflow-x: hidden;
   /* scroll-snap-align: start; */
 }
 
@@ -1239,18 +1240,44 @@ section {
 #brands {
   background: #030303;
   min-height: max-content;
-  padding: 50px 10px;
-  overflow-x: hidden !important;
+  padding: 30px 10px;
 }
 
-.brands-owl-carousel .owl-dots {
-  display: none;
-}
-
-.brands_img_container img {
+.logos_carousel {
   width: 100%;
-  max-width: 100px;
-  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.logos_carousel_inner {
+  white-space: nowrap;
+  animation: logoCarousel 15s linear infinite;
+}
+
+@keyframes logoCarousel {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-101%);
+  }
+}
+
+.logos_container {
+  width: 100%;
+  display: inline-block;
+  padding: 0px 40px;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logos img {
+  width: 100px;
+  height: auto;
 }
 
 /* Contact */

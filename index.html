@@ -15,21 +15,6 @@
     />
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- Owl Carousel 2 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <!-- Link FontAwesome -->
     <link
       rel="stylesheet"
@@ -71,8 +56,14 @@
     <!-- Main -->
     <main id="main">
       <section class="front">
-        <video autoplay muted loop src="media/bg_video1.mp4"></video>
-        <!-- <img src="./media/bg_static.jpg" alt="" /> -->
+        <video
+          autoplay
+          muted
+          loop
+          src="media/bg_video1.mp4"
+          id="bg_video"
+        ></video>
+        <img src="./media/bg_static.jpg" alt="" id="bg_image" />
         <div class="two_sections">
           <section class="section">
             <h1 data-aos="fade-up" data-aos-offset="10" data-aos-duration="900">
@@ -662,7 +653,7 @@
               class="service_card get_a_quote"
               data-aos="fade"
               data-aos-delay="100"
-              data-aos-offset="200"
+              data-aos-offset="150"
             >
               <h4>Get a quote</h4>
               <a href="#contact">Click Here</a>
@@ -671,8 +662,7 @@
               class="service_card"
               data-aos="fade"
               data-aos-delay="20"
-              data-aos-anchor=".get_a_quote"
-              data-aos-offset="200"
+              data-aos-offset="150"
             >
               <div class="service_card_text">
                 <h4>Video Editing</h4>
@@ -700,30 +690,16 @@
       <!-- Brands -->
       <section id="brands">
         <div class="container">
-          <div class="owl-carousel brands-owl-carousel owl-theme">
-            <div class="item">
-              <div class="brands_img_container">
-                <img src="./media/brands/skisc.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="brands_img_container">
-                <img src="./media/brands/ravetag.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="brands_img_container">
-                <img src="./media/brands/mc_college.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="brands_img_container">
-                <img src="./media/brands/brave_education.png" alt="" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="brands_img_container">
-                <img src="./media/brands/praxis.png" alt="" />
+          <div class="logos_carousel">
+            <div class="logos_carousel_inner">
+              <div class="logos_container">
+                <div class="logos">
+                  <img src="./media/logos/skisc.png" alt="" />
+                  <img src="./media/logos/ravetag.png" alt="" />
+                  <img src="./media/logos/mc_college.png" alt="" />
+                  <img src="./media/logos/brave_education.png" alt="" />
+                  <img src="./media/logos/praxis.png" alt="" />
+                </div>
               </div>
             </div>
           </div>
@@ -835,46 +811,6 @@
     ></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Owl Carousel 2 -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script>
-      $(".brands-owl-carousel").owlCarousel({
-        loop: true,
-        margin: 120,
-        nav: false,
-        lazyLoad: true,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        smartSpeed: 700,
-        responsive: {
-          0: {
-            items: 2,
-            margin: 40,
-          },
-          300: {
-            items: 2,
-            margin: 20,
-          },
-          500: {
-            items: 3,
-            margin: 20,
-          },
-          600: {
-            items: 3,
-            margin: 40,
-          },
-          1000: {
-            items: 5,
-          },
-        },
-      });
-    </script>
     <!-- Link JS -->
     <script src="script.js"></script>
   </body>

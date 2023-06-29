@@ -1,6 +1,8 @@
 const header = document.getElementById("header");
 const mobileMenuBtn = document.querySelector(".mobile_menu_btn");
 const navlinks = document.querySelector(".navlinks");
+const bgVideo = document.getElementById("bg_video");
+const bgImage = document.getElementById("bg_image");
 const toggleButtons = document.querySelectorAll(".toggle_button");
 const categories = document.querySelectorAll(".category");
 const frontAboutText = document.getElementById("front_about_text");
@@ -34,6 +36,12 @@ mobileMenuBtn.addEventListener("click", () => {
 });
 
 function typeText() {
+  bgVideo.style.display = "none";
+  bgImage.style.display = "initial";
+
+  const logos = document.querySelector(".logos_container").cloneNode(true);
+  document.querySelector(".logos_carousel_inner").append(logos);
+
   var text =
     "Hey there, Boss! Buckle up for a thrilling introduction to the web-savvy college student who's been bitten by the coding bug. I've poured countless hours into honing my skills, crafting pixel-perfect websites that leave users in awe. Ready to inject a massive WOW factor into the online world? Let's dive into this exciting journey together!";
   frontAboutText.textContent = "";
@@ -45,6 +53,8 @@ function typeText() {
         index++;
       } else {
         clearInterval(typeEffectInterval);
+        bgVideo.style.display = "initial";
+        bgImage.style.display = "none";
       }
     }, 35);
   }, 2200);
