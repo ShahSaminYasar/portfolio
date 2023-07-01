@@ -72,8 +72,8 @@ function typeText() {
         bgVideo.style.display = "initial";
         bgImage.style.display = "none";
       }
-    }, 35);
-  }, 2200);
+    }, 10);
+  }, 3700);
 }
 
 function toggleCategory(e) {
