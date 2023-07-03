@@ -111,7 +111,7 @@ var portfolioContent = [
                   <span style="background-color: rgb(9, 194, 255)">CSS</span>
                   <span style="background-color: yellow">JS</span>`,
       desc: "A dynamic app where an user can give MCQ tests based on his lessons. I built it with 100% self written vanilla JavaScript codes. A teacher can add as many questions as he wants and a student is able to select the topic and start the quiz/MCQ test anytime. The UI is completely user friendly with smooth transitions, animations and what not!",
-      link: "https://shahsaminyasar.github.io/ssc2023",
+      link: "https://shahsaminyasar.github.io/quiz-app/",
     },
     {
       image: "./media/blog_system_ss.png",
@@ -148,6 +148,15 @@ var portfolioContent = [
                   <span style="background-color: yellow">JS</span>`,
       desc: "Dragon Repeller is an RPG adventure game. In it, the player has to fight with monsters to gain the ability to fight with the dragon to win the game. The game has a shop, caves, and different monsters. The player has to keep up with his strength in game and earn coins to buy weapons from the shop. Overall, I hope you will enjoy playing it.",
       link: "https://shahsaminyasar.github.io/dragon-repeller",
+    },
+    {
+      image: "./media/sayeman_clone_ss.png",
+      name: "Sayeman - Clone",
+      languages: `<span style="background-color: orangered">HTML</span>
+                  <span style="background-color: rgb(9, 194, 255)">CSS</span>
+                  <span style="background-color: yellow">JS</span>`,
+      desc: "This is a cloned version that I made from the official website of Sayeman Resort. The main website was built with Wordpress and Elementor, whereas I built the clone version with HTML, CSS and JavaScript without any kind of change/modification.",
+      link: "https://shahsaminyasar.github.io/sayeman-clone",
     },
     {
       image: "./media/dance_website_ss.jpg",
