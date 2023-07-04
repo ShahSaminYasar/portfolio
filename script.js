@@ -120,7 +120,7 @@ var portfolioContent = [
                   <span style="background-color: rgb(9, 194, 255)">CSS</span>
                   <span style="background-color: royalblue">PHP</span>`,
       desc: "I created a fully functional PHP blog system where users worldwide can write and upload posts on various topics. Admins have dedicated panels to write, edit, check, and delete posts. This system serves as a professional blogging website for organizations/companies. Feel free to check it out!",
-      link: "http://ssyblog.42web.io/home.php",
+      link: "https://shahsaminyasar.github.io/portfolio/blog.html",
     },
     {
       image: "./media/foodie_ss.jpg",
