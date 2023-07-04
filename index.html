@@ -81,7 +81,7 @@
           autoplay
           muted
           loop
-          src="media/bg_video1.mp4"
+          src="./media/bg_video1.mp4"
           id="bg_video"
         ></video>
         <img src="./media/bg_static.jpg" alt="" id="bg_image" />
@@ -636,6 +636,7 @@
             <div class="carousel-inner">
               <div class="carousel-item vci1 active"></div>
               <div class="carousel-item vci2"></div>
+              <div class="carousel-item vci3"></div>
             </div>
             <button
               class="carousel-control-prev"
@@ -844,14 +845,22 @@
         <div class="container social_handles_container">
           <h4 data-aos="zoom-in-up">Handles</h4>
           <div class="social_handles">
-            <a href="#" data-aos="fade-up"
+            <a
+              href="https://instagram.com/shah_samin_yasar"
+              target="_blank"
+              data-aos="fade-up"
               ><i class="fa-brands fa-instagram"></i
             ></a>
-            <a href="#" data-aos="fade-up" data-aos-delay="100"
+            <a
+              href="https://facebook.com/shahsaminyasar"
+              target="_blank"
+              data-aos="fade-up"
+              data-aos-delay="100"
               ><i class="fa-brands fa-facebook-f"></i
             ></a>
             <a
               href="https://bd.linkedin.com/in/shah-samin-yasar-undefined-478405263"
+              target="_blank"
               data-aos="fade-up"
               data-aos-delay="200"
               ><i class="fa-brands fa-linkedin-in"></i
@@ -870,16 +879,19 @@
         <img src="./media/logo.png" alt="" />
         <div>
           <h4>Important links</h4>
-          <a href="#">Download my <span>CV</span></a>
-          <a href="#">Watch my <span>intro</span></a>
-          <a href="#">Have a <span>chat</span></a>
+          <a href="./media/cv.jpg" download>Download my <span>CV</span></a>
+          <a
+            onclick="viewVideo('https://www.youtube.com/embed/r-3EZf3oBZ8?autoplay=1')"
+            >Watch my <span>intro</span></a
+          >
+          <a href="#contact">Have a <span>chat</span></a>
         </div>
         <div>
           <h4>View some live projects</h4>
           <div class="footerProjectButtons">
-            <button>Quiz System</button>
-            <button>TODO Tasks</button>
-            <button>Complete Blog Backend</button>
+            <button onclick="viewPortfolio(0, 0)">Quiz System</button>
+            <button onclick="viewPortfolio(0, 4)">TODO Tasks</button>
+            <button onclick="viewPortfolio(0, 2)">Complete Blog Backend</button>
           </div>
         </div>
         <span>Copyright &copy; 2023 SHAH SAMIN YASAR</span>

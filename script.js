@@ -301,7 +301,7 @@ function viewVideo(link) {
   videoViewer.insertAdjacentHTML("beforeend", iframe);
   setTimeout(() => {
     loadingText2.style.display = "none";
-  }, 3000);
+  }, 2500);
 }
 
 function closeVv() {
@@ -315,6 +315,10 @@ function closeVv() {
 }
 
 var videoShowcaseData = [
+  {
+    thumbnail: "./media/portfolio/ssy_p_thumbnail.png",
+    link: "https://www.youtube.com/embed/r-3EZf3oBZ8?autoplay=1",
+  },
   {
     thumbnail: "./media/portfolio/vs1.jpg",
     link: "https://www.youtube.com/embed/PL4uP5Ki9cE?autoplay=1",

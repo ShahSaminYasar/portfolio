@@ -258,8 +258,8 @@ section {
   width: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(8, 3, 51, 0.7) 0%,
-    rgba(8, 3, 51, 0.7) 65%,
+    rgba(8, 3, 51, 0.8) 0%,
+    rgba(8, 3, 51, 0.8) 65%,
     rgba(8, 3, 51, 0.9) 75%,
     rgba(0, 0, 0, 1) 100%
   );
@@ -281,7 +281,57 @@ section {
   bottom: 0;
   z-index: -1;
 }
+/* 
+.front .two_sections section h1 {
+  color: white;
+  text-shadow: 0px 0px 1px rgb(14, 233, 215), 0px 0px 2px rgb(14, 233, 215),
+    0px 0px 3px rgb(14, 233, 215), 0px 0px 4px rgb(14, 233, 215),
+    0px 0px 5px rgb(14, 233, 215), 0px 0px 20px rgb(14, 233, 215),
+    0px 0px 30px rgb(14, 233, 215), 0px 0px 40px rgb(14, 233, 215);
+  font-size: 7rem;
+  font-weight: 900;
+  line-height: 1em;
+  animation: textColorChange1 8s linear infinite;
+}
 
+@keyframes textColorChange1 {
+  0% {
+    text-shadow: 0px 0px 1px rgb(14, 233, 215), 0px 0px 2px rgb(14, 233, 215),
+      0px 0px 3px rgb(14, 233, 215), 0px 0px 4px rgb(14, 233, 215),
+      0px 0px 5px rgb(14, 233, 215), 0px 0px 20px rgb(14, 233, 215),
+      0px 0px 30px rgb(14, 233, 215), 0px 0px 40px rgb(14, 233, 215);
+  }
+  50% {
+    text-shadow: 0px 0px 1px rgb(14, 182, 233), 0px 0px 2px rgb(14, 182, 233),
+      0px 0px 3px rgb(14, 182, 233), 0px 0px 4px rgb(14, 182, 233),
+      0px 0px 5px rgb(14, 182, 233), 0px 0px 20px rgb(14, 182, 233),
+      0px 0px 30px rgb(14, 182, 233), 0px 0px 30px rgb(14, 182, 233);
+  }
+}
+
+.front .two_sections section h1 span {
+  display: block;
+  text-shadow: 0px 0px 1px rgb(14, 182, 233), 0px 0px 2px rgb(14, 182, 233),
+    0px 0px 3px rgb(14, 182, 233), 0px 0px 4px rgb(14, 182, 233),
+    0px 0px 5px rgb(14, 182, 233), 0px 0px 20px rgb(14, 182, 233),
+    0px 0px 30px rgb(14, 182, 233), 0px 0px 30px rgb(14, 182, 233);
+  animation: textColorChange2 8s linear infinite;
+}
+
+@keyframes textColorChange2 {
+  0% {
+    text-shadow: 0px 0px 1px rgb(14, 182, 233), 0px 0px 2px rgb(14, 182, 233),
+      0px 0px 3px rgb(14, 182, 233), 0px 0px 4px rgb(14, 182, 233),
+      0px 0px 5px rgb(14, 182, 233), 0px 0px 20px rgb(14, 182, 233),
+      0px 0px 30px rgb(14, 182, 233), 0px 0px 30px rgb(14, 182, 233);
+  }
+  50% {
+    text-shadow: 0px 0px 1px rgb(14, 233, 215), 0px 0px 2px rgb(14, 233, 215),
+      0px 0px 3px rgb(14, 233, 215), 0px 0px 4px rgb(14, 233, 215),
+      0px 0px 5px rgb(14, 233, 215), 0px 0px 20px rgb(14, 233, 215),
+      0px 0px 30px rgb(14, 233, 215), 0px 0px 40px rgb(14, 233, 215);
+  }
+} */
 .front .two_sections section h1 {
   color: white;
   text-shadow: 0px 0px 1px rgb(153, 14, 233), 0px 0px 2px rgb(153, 14, 233),
@@ -346,6 +396,7 @@ section {
 
 #type_text {
   color: rgb(233, 14, 116);
+  /* color: rgb(0, 247, 255); */
   font-size: 2.5rem;
   font-weight: 600;
 }
@@ -1508,6 +1559,7 @@ section {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   text-align: left;
+  cursor: pointer;
 }
 
 #footer .container div a:hover {
@@ -1536,6 +1588,7 @@ section {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.9);
   position: relative;
+  cursor: pointer;
 }
 
 .footerProjectButtons button:hover {
