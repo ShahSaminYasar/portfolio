@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      SHAH SAMIN YASAR - Portfolio | Web Development, Graphic Design, and More.
+    </title>
+    <meta
+      name="description"
+      content="Welcome to my portfolio website, showcasing my creative works and accomplishments. Explore my diverse range of projects in web development, graphic design, and more. With a passion for innovation and attention to detail, I strive to deliver captivating and user-centric solutions. Discover my skills, expertise, and dedication to crafting unique digital experiences. Get inspired and let's collaborate on bringing your ideas to life."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Portfolio of Shah Samin Yasar" />
+    <meta
+      property="og:description"
+      content="Welcome to my portfolio website, showcasing my creative works and accomplishments. Explore my diverse range of projects in web development, graphic design, and more. With a passion for innovation and attention to detail, I strive to deliver captivating and user-centric solutions. Discover my skills, expertise, and dedication to crafting unique digital experiences. Get inspired and let's collaborate on bringing your ideas to life."
+    />
+    <meta
+      property="og:image"
+      content="https://drive.google.com/file/d/15cZ8pJMABTawTPjdwbeJTzpLbFMXADdx/view?usp=sharing"
+    />
+    <meta
+      property="og:url"
+      content="https://shahsaminyasar.github.io/portfolio"
+    />
+    <link rel="icon" type="image/x-icon" href="./media/favicon.jpg" />
+    <!-- Link Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Link FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <!-- <img src="./media/logo.png" alt="" /> -->
+          SHAH SAMIN YASAR
+        </a>
+        <button class="mobile_menu_btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="navlinks">
+          <ul>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main id="main">
+      <section id="intro" class="front">
+        <video
+          autoplay
+          muted
+          loop
+          src="./media/bg_video1.mp4"
+          id="bg_video"
+        ></video>
+        <img src="./media/bg_static.jpg" alt="" id="bg_image" />
+        <div class="two_sections">
+          <section class="section">
+            <h1 data-aos="fade-up" data-aos-offset="10" data-aos-duration="900">
+              SHAH<span
+                data-aos="fade-right"
+                data-aos-offset="10"
+                data-aos-duration="1000"
+                >SAMIN</span
+              >YASAR
+            </h1>
+            <h2
+              data-aos="fade-right"
+              data-aos-delay="600"
+              data-aos-duration="1000"
+            >
+              I am a <span id="type_text">Graphics Designer</span>
+            </h2>
+            <div class="buttons_group">
+              <a href="#about" data-aos="fade-up">Know About Me</a>
+              <a
+                href="./media/cv.jpg"
+                download
+                data-aos="fade-up"
+                data-aos-delay="200"
+                >Download CV</a
+              >
+            </div>
+          </section>
+          <section class="section content_section">
+            <div
+              id="about_container"
+              class="category category1 active"
+              data-aos="fade"
+              data-aos-duration="1000"
+              data-aos-delay="1200"
+            >
+              <h3 style="display: none">About Me</h3>
+              <span>&#9001;intro&#12297;</span>
+              <p id="front_about_text"></p>
+              <span>&#9001;/intro&#12297;</span>
+            </div>
+            <div id="portfolio_container" class="category category2">
+              <h3 style="display: none">Portfolio</h3>
+              <span>print(portfolio);</span>
+              <div
+                id="carousel1"
+                class="carousel slide front_carousel"
+                data-bs-ride="carousel"
+                data-bs-interval="3000"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carousel1"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel1"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel1"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel1"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel1"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel1"
+                    data-bs-slide-to="5"
+                    aria-label="Slide 6"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel1"
+                    data-bs-slide-to="6"
+                    aria-label="Slide 7"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="carousel-item-content">
+                      <img
+                        src="./media/quiz_app_ss.png"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                      <div class="carousel-item-content-text">
+                        <h3>Quiz/MCQ App</h3>
+                        <p>
+                          A dynamic app where an user can give MCQ tests based
+                          on his lessons.
+                        </p>
+                        <button onclick="viewPortfolio(0, 0)">
+                          View Project
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-item-content">
+                      <img
+                        src="./media/blog_system_ss.png"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                      <div class="carousel-item-content-text">
+                        <h3>Blog System</h3>
+                        <p>A fully functional dynamic blogging system.</p>
+                        <button onclick="viewPortfolio(0, 2)">
+                          View Project
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-item-content">
+                      <img
+                        src="./media/dragon_repeller_ss.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                      <div class="carousel-item-content-text">
+                        <h3>Dragon Repeller</h3>
+                        <p>
+                          It is a RPG game based on a mission to defeat a
+                          dragon.
+                        </p>
+                        <button onclick="viewPortfolio(0, 5)">
+                          View Project
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-item-content">
+                      <img
+                        src="./media/foodie_ss.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                      <div class="carousel-item-content-text">
+                        <h3>Foodie</h3>
+                        <p>A static restaurent website.</p>
+                        <button onclick="viewPortfolio(0, 3)">
+                          View Project
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-item-content">
+                      <img
+                        src="./media/todo_tasks_app_ss.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                      <div class="carousel-item-content-text">
+                        <h3>TODO Tasks</h3>
+                        <p>A dynamic system for adding upcoming works/tasks.</p>
+                        <button onclick="viewPortfolio(0, 4)">
+                          View Project
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-item-content">
+                      <img
+                        src="./media/sayeman_clone_ss.png"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                      <div class="carousel-item-content-text">
+                        <h3>Sayeman - Clone</h3>
+                        <p>A clone of 'Sayeman Resort' website.</p>
+                        <button onclick="viewPortfolio(0, 6)">
+                          View Project
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-item-content">
+                      <img
+                        src="./media/dance_website_ss.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                      <div class="carousel-item-content-text">
+                        <h3>Dance Website</h3>
+                        <p>A static website expressing a dance company.</p>
+                        <button onclick="viewPortfolio(0, 7)">
+                          View Project
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel1"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel1"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div id="toggle_buttons" data-aos="fade" data-aos-delay="1200">
+              <button
+                id="toggle_button1"
+                class="toggle_button active"
+                onclick="toggleCategory(event)"
+                data-category="1"
+              >
+                1
+              </button>
+              <span class="button_bar_between"></span>
+              <button
+                id="toggle_button2"
+                class="toggle_button"
+                onclick="toggleCategory(event)"
+                data-category="2"
+              >
+                2
+              </button>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section id="about">
+        <div class="container">
+          <div class="section">
+            <h2 class="section_title" data-aos="fade-right">
+              About <span class="section_title_highlight">Me</span>
+            </h2>
+            <p class="section_info" data-aos="fade-up">
+              I am a skilled and dedicated web developer with a strong
+              proficiency in creating exceptional websites. With a solid
+              foundation in various web technologies and frameworks, I have
+              honed my skills through hands-on experience and self-driven
+              projects. My expertise lies in designing visually appealing
+              interfaces, implementing robust functionality, and optimizing
+              websites for superior performance. I am passionate about staying
+              up-to-date with the latest trends and techniques in web
+              development, constantly expanding my knowledge to deliver
+              cutting-edge solutions. With a meticulous attention to detail and
+              a commitment to continuous learning, I am driven to create
+              engaging web experiences that exceed expectations.
+            </p>
+          </div>
+          <div class="section">
+            <img
+              src="./media/pic1.jpg"
+              alt="Image of Shah Samin Yasar"
+              data-aos="fade-left"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Skills Section -->
+      <section id="skills">
+        <div class="container">
+          <div class="section">
+            <img src="./media/skills.svg" alt="" data-aos="fade-right" />
+          </div>
+          <div class="section">
+            <h2 class="section_title" data-aos="fade-right">
+              My <span class="section_title_highlight">Skills</span>
+            </h2>
+            <div class="skills_container">
+              <div class="skill_container" data-aos="fade-up">
+                <div class="skill_text">
+                  <span>HTML/CSS</span>
+                  <span>94%</span>
+                </div>
+                <div class="skill_bar_container">
+                  <span class="skill_bar htmlCss"></span>
+                </div>
+              </div>
+              <div class="skill_container" data-aos="fade-up">
+                <div class="skill_text">
+                  <span>JavaScript</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill_bar_container">
+                  <span class="skill_bar js"></span>
+                </div>
+              </div>
+              <div class="skill_container" data-aos="fade-up">
+                <div class="skill_text">
+                  <span>PhP</span>
+                  <span>65%</span>
+                </div>
+                <div class="skill_bar_container">
+                  <span class="skill_bar php"></span>
+                </div>
+              </div>
+              <div class="skill_container" data-aos="fade-up">
+                <div class="skill_text">
+                  <span>ReactJS</span>
+                  <span>52%</span>
+                </div>
+                <div class="skill_bar_container">
+                  <span class="skill_bar reactjs"></span>
+                </div>
+              </div>
+              <div class="skill_container" data-aos="fade-up">
+                <div class="skill_text">
+                  <span>Wordpress</span>
+                  <span>93%</span>
+                </div>
+                <div class="skill_bar_container">
+                  <span class="skill_bar wordpress"></span>
+                </div>
+              </div>
+              <div class="skill_container" data-aos="fade-up">
+                <div class="skill_text">
+                  <span>Python</span>
+                  <span>28%</span>
+                </div>
+                <div class="skill_bar_container">
+                  <span class="skill_bar python"></span>
+                </div>
+              </div>
+              <div class="skill_container" data-aos="fade-up">
+                <div class="skill_text">
+                  <span>C#</span>
+                  <span>12%</span>
+                </div>
+                <div class="skill_bar_container">
+                  <span class="skill_bar csharp"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- + Skills -->
+      <section id="plus_skills">
+        <div class="container">
+          <h2 class="section_title" data-aos="fade">
+            I <span class="section_title_highlight">also</span> know...
+          </h2>
+          <div class="plus_skills">
+            <div class="plus_skill" data-aos="fade-right" data-aos-offset="230">
+              <h4>Graphics Design</h4>
+              <p>
+                With a solid foundation in graphics design, I've successfully
+                worked on numerous projects in the local market. I possess
+                expertise in various design platforms, crafting visually
+                captivating designs that leave a lasting impact.
+              </p>
+            </div>
+            <div class="plus_skill" data-aos="zoom-in-up" data-aos-offset="230">
+              <h4>Video Editing</h4>
+              <p>
+                With over 4 and a half years of experience in video editing,
+                I've transformed raw footage into mesmerizing visual
+                masterpieces. Having completed hundreds of projects, I possess
+                the skills to create magical videos that captivate audiences and
+                bring stories to life.
+              </p>
+            </div>
+            <div class="plus_skill" data-aos="fade-left" data-aos-offset="230">
+              <h4>App Development</h4>
+              <p>
+                Driven by curiosity, I delved into app development during the
+                pandemic. Mastering the basics and utilizing platforms like MIT
+                App Inventor, I've built multiple apps. With a passion for
+                software and a hunger for innovation, I continue to create
+                impactful applications that push boundaries.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Education -->
+      <section id="education">
+        <h2 class="section_title small-screen-section_title">
+          <span class="section_title_highlight">Educational</span>
+          Qualification
+        </h2>
+        <div class="container">
+          <h2 class="section_title">
+            <span class="section_title_highlight">Educational</span>
+            Qualification
+          </h2>
+          <div class="education_timeline">
+            <span
+              class="education_timeline_tag"
+              data-aos="fade-right"
+              data-aos-offset="220"
+              >PSC - 2017</span
+            >
+            <span
+              class="education_timeline_tag"
+              data-aos="fade-right"
+              data-aos-offset="220"
+              data-aos-delay="100"
+              >JSC - 2020</span
+            >
+            <span
+              class="education_timeline_tag"
+              data-aos="fade-right"
+              data-aos-offset="220"
+              data-aos-delay="200"
+              >SSC - 2023</span
+            >
+            <span
+              class="education_timeline_tag"
+              data-aos="fade-right"
+              data-aos-offset="220"
+              data-aos-delay="300"
+              >College - Running</span
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio -->
+      <section id="portfolio">
+        <div class="container">
+          <h2 class="section_title">
+            <span class="section_title_highlight">Portfolio</span>
+          </h2>
+          <div class="portfolio">
+            <nav class="portfolio_nav">
+              <ul>
+                <li>
+                  <button
+                    class="pfoNavBtn pfoWebBtn"
+                    onclick="pfoWeb()"
+                    data-aos="fade-up"
+                    data-aos-delay="0"
+                    data-aos-offset="200"
+                  >
+                    Web Design/Development
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="pfoNavBtn"
+                    onclick="pfoGraphics(event)"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    data-aos-offset="200"
+                  >
+                    Graphics Design
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="pfoNavBtn"
+                    onclick="pfoVedit(event)"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    data-aos-offset="200"
+                  >
+                    Video Editing
+                  </button>
+                </li>
+              </ul>
+            </nav>
+            <div class="portfolio_items">
+              <div class="portfolio_viewer">
+                <span id="close_pv_btn" onclick="closePv()">&times;</span>
+              </div>
+              <div class="video_viewer">
+                <span id="close_pv_btn" onclick="closeVv()">&times;</span>
+                <span class="loading_text lt2">Loading...</span>
+              </div>
+              <div
+                class="web_gallery"
+                data-aos="fade"
+                data-aos-delay="500"
+                data-aos-offset="200"
+              ></div>
+              <div class="photo_gallery">
+                <img src="./media/portfolio/g01.jpg" alt="" />
+                <img src="./media/portfolio/g02.jpg" alt="" />
+                <img
+                  src="./media/portfolio/g03.jpg"
+                  alt=""
+                  style="grid-row: span 2"
+                />
+                <img
+                  src="./media/portfolio/g05.jpg"
+                  alt=""
+                  style="grid-column: span 2"
+                />
+                <img
+                  src="./media/portfolio/g04.jpg"
+                  alt=""
+                  style="grid-row: span 2"
+                />
+                <img src="./media/portfolio/g06.jpg" alt="" />
+                <img src="./media/portfolio/g07.jpg" alt="" />
+              </div>
+              <div class="video_gallery"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Videos Showcase -->
+      <section id="video_showcase">
+        <span class="loading_text lt1">Loading...</span>
+        <div class="container videos-container">
+          <div
+            id="carousel2"
+            class="carousel slide videos_carousel"
+            data-bs-ride="carousel"
+            data-bs-interval="4000"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item vci1 active"></div>
+              <div class="carousel-item vci2"></div>
+              <div class="carousel-item vci3"></div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel2"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel2"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- <span class="info_text"
+          ><i class="fa-solid fa-circle-info"></i> To watch a video, you may
+          need to set it to fullscreen mode.</span
+        > -->
+      </section>
+      <!-- Services -->
+      <section id="services">
+        <div class="container">
+          <h2 class="section_title" data-aos="fade">
+            <span class="section_title_highlight">Services</span> I offer
+          </h2>
+          <p class="section_info">
+            After reviewing my portfolio and the showcased projects, I believe
+            you now have a clear idea of my skills and capabilities. The time
+            has come for you to make the decision on whether we should
+            collaborate. If you are inclined to provide me with the valuable
+            opportunity to work with you, please choose the desired service from
+            the following list of offerings.
+          </p>
+          <div class="service_cards">
+            <div
+              class="service_card"
+              data-aos="fade"
+              data-aos-delay="0"
+              data-aos-offset="200"
+            >
+              <div class="service_card_text">
+                <h4>Website Design</h4>
+                <p>
+                  I will give you a fully functional website with the following
+                  features-
+                </p>
+                <ul>
+                  <li>
+                    Custom Coded [HTML, CSS, JS, PHP, Bootstrap] Wordpress (You
+                    Choose)
+                  </li>
+                  <li>100% Responsive Website</li>
+                  <li>Eye Catching Design</li>
+                  <li>Fully accessible and user friendly</li>
+                  <li>PSD/Ai/Figma to Code (Your Design - My Code)</li>
+                  <li>Content Upload</li>
+                  <li>24/7 Client Support</li>
+                </ul>
+              </div>
+              <a href="#contact">Order</a>
+            </div>
+            <div
+              class="service_card"
+              data-aos="fade"
+              data-aos-delay="200"
+              data-aos-offset="200"
+            >
+              <div class="service_card_text">
+                <h4>Graphics Design</h4>
+                <p>
+                  Get your graphics designed and express yourself/your brand.
+                </p>
+                <ul>
+                  <li>
+                    Get your graphics designed and express yourself/your brand.
+                  </li>
+                  <li>
+                    YouTube Banner, Facebook Banner, Website Design, Logo etc.
+                  </li>
+                  <li>Ultra HD Quality</li>
+                  <li>No pixelation</li>
+                  <li>Pixel Perfect Design</li>
+                  <li>Unlimited Revisions</li>
+                </ul>
+              </div>
+              <a href="#contact">Order</a>
+            </div>
+            <div
+              class="service_card get_a_quote"
+              data-aos="fade"
+              data-aos-delay="100"
+              data-aos-offset="150"
+            >
+              <h4>Get a quote</h4>
+              <a href="#contact">Click Here</a>
+            </div>
+            <div
+              class="service_card"
+              data-aos="fade"
+              data-aos-delay="20"
+              data-aos-offset="150"
+            >
+              <div class="service_card_text">
+                <h4>Video Editing</h4>
+                <p>
+                  You already know how much I love video editing! I promise to
+                  serve you with a masterpiece that you will definitely be
+                  satisfied with!
+                </p>
+                <ul>
+                  <li>Upto 4K quality video</li>
+                  <li>
+                    Transitions, invisible smooth cuts, masking, titles, lower
+                    thirds, video manipulation etc. everything needed in 1
+                    package!
+                  </li>
+                  <li>You can get a free thumbnail designed.</li>
+                  <li>Video Upload</li>
+                </ul>
+              </div>
+              <a href="#contact">Order</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Brands -->
+      <section id="brands">
+        <div class="container">
+          <div class="logos_container">
+            <div class="logo_container">
+              <img src="./media/logos/skisc.png" alt="" />
+            </div>
+            <div class="logo_container">
+              <img src="./media/logos/ravetag.png" alt="" />
+            </div>
+            <div class="logo_container">
+              <img src="./media/logos/mc_college.png" alt="" />
+            </div>
+            <div class="logo_container">
+              <img src="./media/logos/brave_education.png" alt="" />
+            </div>
+            <div class="logo_container">
+              <img src="./media/logos/praxis.png" alt="" />
+            </div>
+            <div class="logo_container">
+              <img src="./media/logos/skisc.png" alt="" />
+            </div>
+            <div class="logo_container">
+              <img src="./media/logos/ravetag.png" alt="" />
+            </div>
+            <div class="logo_container">
+              <img src="./media/logos/mc_college.png" alt="" />
+            </div>
+            <div class="logo_container">
+              <img src="./media/logos/brave_education.png" alt="" />
+            </div>
+            <div class="logo_container">
+              <img src="./media/logos/praxis.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact">
+        <div class="container">
+          <h2 class="section_title" data-aos="fade" data-aos-offset="50">
+            Let's say <span class="section_title_highlight">Hi!</span>
+          </h2>
+          <div class="contact_form_container">
+            <form
+              action="https://formspree.io/f/mvojplod"
+              method="POST"
+              class="contact_form"
+              data-aos="fade"
+            >
+              <input type="text" name="Name" placeholder="Name" required />
+              <input type="email" name="Email" placeholder="Email" required />
+              <textarea
+                cols="30"
+                rows="10"
+                name="Message"
+                placeholder="Message"
+                required
+              ></textarea>
+              <button type="submit">Send</button>
+            </form>
+            <img src="./media/mailbox.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Socials -->
+      <section id="socials">
+        <div class="container social_handles_container">
+          <h4 data-aos="zoom-in-up">Handles</h4>
+          <div class="social_handles">
+            <a
+              href="https://instagram.com/shah_samin_yasar"
+              target="_blank"
+              data-aos="fade-up"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://facebook.com/shahsaminyasar"
+              target="_blank"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://bd.linkedin.com/in/shah-samin-yasar-undefined-478405263"
+              target="_blank"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" data-aos="fade-up" data-aos-delay="300"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <img src="./media/logo.png" alt="" />
+        <div>
+          <h4>Important links</h4>
+          <a href="./media/cv.jpg" download>Download my <span>CV</span></a>
+          <a
+            onclick="viewVideo('https://www.youtube.com/embed/r-3EZf3oBZ8?autoplay=1')"
+            >Watch my <span>intro</span></a
+          >
+          <a href="#contact">Have a <span>chat</span></a>
+        </div>
+        <div>
+          <h4>View some live projects</h4>
+          <div class="footerProjectButtons">
+            <button onclick="viewPortfolio(0, 0)">Quiz System</button>
+            <button onclick="viewPortfolio(0, 4)">TODO Tasks</button>
+            <button onclick="viewPortfolio(0, 2)">Complete Blog Backend</button>
+          </div>
+        </div>
+        <span>Copyright &copy; 2023 SHAH SAMIN YASAR</span>
+      </div>
+    </footer>
+
+    <!-- Link jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Link Typed.JS -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#type_text", {
+        strings: [
+          "Graphics Designer",
+          "Student",
+          "Web Designer",
+          "Web Developer",
+        ],
+        typeSpeed: 40,
+        backSpeed: 40,
+        loop: true,
+      });
+    </script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Link JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
