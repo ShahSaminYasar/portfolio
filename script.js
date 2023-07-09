@@ -33,11 +33,11 @@ window.onscroll = () => {
   }
 };
 
-document.addEventListener("keydown", (event) => {
-  if (event.key === " ") {
-    event.preventDefault();
-  }
-});
+// document.addEventListener("keydown", (event) => {
+//   if (event.key === " ") {
+//     event.preventDefault();
+//   }
+// });
 
 mobileMenuBtn.addEventListener("click", () => {
   navlinks.classList.toggle("active");
