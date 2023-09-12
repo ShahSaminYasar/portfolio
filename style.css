@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 0.2s;
+  cursor: url('./media/cursors/auto.png'), auto;
 }
 
 /* Scrollbar */
@@ -1613,4 +1614,39 @@ section {
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
   font-size: 1.1rem;
+}
+
+
+
+/* Cursor */
+#cursor_outer{
+  position: fixed;
+  top: -9999px;
+  left: -9999px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #00f7ff;
+  box-shadow: 0px 0px 5px #00c3ff;
+  transform: translate(-50%, -50%);
+  transition: all 0.225s linear;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+#cursor_inner{
+  position: fixed;
+  top: -9999px;
+  left: -9999px;
+  z-index: 9999;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  background: #00f7ff;
+  transform: translate(-50%, -50%);
+  transition: all 0.08s linear;
+  mix-blend-mode: difference;
+  pointer-events: none;
 }

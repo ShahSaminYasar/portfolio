@@ -1,4 +1,6 @@
 const header = document.getElementById("header");
+const cursorOuter = document.getElementById("cursor_outer");
+const cursorInner = document.getElementById("cursor_inner");
 const mobileMenuBtn = document.querySelector(".mobile_menu_btn");
 const navlinks = document.querySelector(".navlinks");
 const navlink = document.querySelectorAll(".navlinks ul li a");
@@ -38,6 +40,34 @@ window.onscroll = () => {
 //     event.preventDefault();
 //   }
 // });
+
+// Cursor
+let prevX = 0;
+let prevY = 0;
+let currX;
+let currY;
+let dispX;
+let dispY;
+let posX = 0;
+let posY = 0;
+document.addEventListener("mousemove", (e) => {
+  currX = e.clientX;
+  currY = e.clientY;
+
+  dispX = currX - prevX;
+  dispY = currY - prevY;
+
+  posX += dispX;
+  posY += dispY;
+
+  prevX = currX;
+  prevY = currY;
+
+  cursorOuter.style.left = `${posX}px`;
+  cursorOuter.style.top = `${posY}px`;
+  cursorInner.style.left = `${posX}px`;
+  cursorInner.style.top = `${posY}px`;
+})
 
 mobileMenuBtn.addEventListener("click", () => {
   navlinks.classList.toggle("active");
