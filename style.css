@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 0.2s;
-  cursor: url('./media/cursors/auto.png'), auto;
+  cursor: url("./media/cursors/auto.png"), auto;
 }
 
 /* Scrollbar */
@@ -837,11 +837,15 @@ section {
 }
 
 .reactjs {
-  width: 52%;
+  width: 90%;
+}
+
+.nodejs {
+  width: 83%;
 }
 
 .wordpress {
-  width: 93%;
+  width: 85%;
 }
 
 .python {
@@ -849,7 +853,7 @@ section {
 }
 
 .c {
-  width: 65%;
+  width: 78%;
 }
 
 /* Plus Skills */
@@ -1616,10 +1620,8 @@ section {
   font-size: 1.1rem;
 }
 
-
-
 /* Cursor */
-#cursor_outer{
+#cursor_outer {
   position: fixed;
   top: -9999px;
   left: -9999px;
@@ -1635,7 +1637,7 @@ section {
   pointer-events: none;
 }
 
-#cursor_inner{
+#cursor_inner {
   position: fixed;
   top: -9999px;
   left: -9999px;
