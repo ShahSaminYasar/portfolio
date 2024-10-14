@@ -136,22 +136,23 @@
   }
 
   .service_cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
   }
 
-  .get_a_quote {
+  /* .get_a_quote {
     grid-row: 2;
     grid-column: 2;
-  }
+  } */
 
   .get_a_quote h4 {
     font-size: 35px;
   }
 
-  .service_card:nth-child(4) {
+  /* .service_card:nth-child(4) {
     grid-column: 1;
     grid-row: 2;
-  }
+  } */
 }
 
 @media screen and (max-width: 750px) {
@@ -761,17 +762,17 @@
   }
 
   .service_cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .service_card:nth-child(4) {
+  /* .service_card:nth-child(4) {
     grid-column: 1;
     grid-row: 3;
-  }
+  } */
 
   .get_a_quote {
-    grid-column: 1;
-    grid-row: 4;
+    /* grid-column: 1;
+    grid-row: 4; */
     padding: 40px 10px 50px;
   }
 

@@ -129,43 +129,69 @@ function toggleCategory(e) {
 var portfolioContent = [
   [
     {
-      image: "./media/skisc_hsc25_ss.png",
+      image: "./media/skisc_hsc25_ss.gif",
       name: "SKISC HSC25",
-      languages: `<span style="background-color: yellow">JavaScript</span>
-                  <span style="background-color: rgb(9, 194, 255)">CSS</span>`,
+      languages: `<span style="background-color: cyan">ReactJS</span>
+                  <span style="background-color: blue; color: white">NodeJS</span>
+                  <span style="background-color: green; color: white">MongoDB</span>
+                  <span style="background-color: rgb(217, 0, 65); color: pink">TailwindCSS</span>`,
       desc: "It is the official website of the HSC-25 batch of The Sylhet Khajanchibari International School and College. Homeworks, assignments, solutions, notes, QnA, blogs, polling, dashboards, user ranks, notifications, authentication, authorization and what not - I have given my all into this MERN stack project! It is my most hard-worked-on, time spent, exciting, challenging, rewarding and favourite project so far.",
       link: "https://skisc-hsc25.web.app",
     },
     {
-      image: "./media/brave_education_ss.png",
+      image: "./media/brave_education_ss.gif",
       name: "Brave Education",
-      languages: `<span style="background-color: yellow">JavaScript</span>
-                  <span style="background-color: rgb(9, 194, 255)">CSS</span>`,
+      languages: `<span style="background-color: cyan">ReactJS</span>
+                  <span style="background-color: blue; color: white">NodeJS</span>
+                  <span style="background-color: green; color: white">MongoDB</span>
+                  <span style="background-color: rgb(217, 0, 65); color: pink">TailwindCSS</span>`,
       desc: "Brave Education is an educational consultancy firm located in Sylhet, Bangladesh. I built this website which serves as their system for course enrollments. People are able to enroll in the courses/exams by going through a systematic process. At the end payments are being processed in the website to confirm enrollments.",
       link: "https://register.braveeducationbd.com/",
     },
     {
-      image: "./media/unity_plate_ss.png",
-      name: "Unity Plate",
-      languages: `<span style="background-color: yellow">JavaScript</span>
-                  <span style="background-color: rgb(9, 194, 255)">CSS</span>`,
-      desc: "Unity Plate is a MERN stack project of food donation campaigns where people can donate their extra food items/leftovers instead of throwing them. The project includes features like user registration, user dashboards, admin panel, dynamic data etc.",
-      link: "https://unity-plate.web.app",
+      image: "./media/ravetagbd_ss.gif",
+      name: "RaveTagBD",
+      languages: `<span style="background-color: cyan">ReactJS</span>
+                  <span style="background-color: blue; color: white">NodeJS</span>
+                  <span style="background-color: green; color: white">MongoDB</span>
+                  <span style="background-color: rgb(217, 0, 65); color: pink">TailwindCSS</span>`,
+      desc: "MERN stack ecommerce website for a clothing store named 'RaveTag' - located in Beanibazar, Sylhet. All the functionalities that a standard ecommerce system requires are present including seperate admin and customer panels.",
+      link: "http://ravetagbd.web.app",
     },
     {
-      image: "./media/libratech_ss.png",
-      name: "LibraTech",
-      languages: `<span style="background-color: yellow">JavaScript</span>
-                  <span style="background-color: rgb(9, 194, 255)">CSS</span>`,
-      desc: "LibraTech is an online library management system built on ReactJS as the frontend, NodeJS and ExpressJS as the backend. Users can borrow books by providing a returning date. Librarians can add new books and modify the inventory. User registration/authentication supports 'Google Sign In' as well as email registration. Books can be searched based on categories/subjects and availability.",
-      link: "https://libra-tech.web.app",
+      image: "./media/definify_ss.gif",
+      name: "DEFINIFY",
+      languages: `<span style="background-color: orangered">HTML</span>
+                  <span style="background-color: rgb(9, 194, 255)">CSS</span>
+                  <span style="background-color: yellow">JavaScript</span>`,
+      desc: "Definify is an online dictionary app built on JavaScript which uses a dictionary api to serve users with an word's meanings, synonyms, antonyms, pronounciations, examples etc. in a very smooth and classy way with animations. I really want you to check it out once!",
+      link: "https://shahsaminyasar.github.io/definify",
+    },
+    {
+      image: "./media/todo_tasks_app_ss.jpg",
+      name: "TODO Tasks",
+      languages: `<span style="background-color: orangered">HTML</span>
+                  <span style="background-color: rgb(9, 194, 255)">CSS</span>
+                  <span style="background-color: yellow">JavaScript</span>`,
+      desc: "It is a dynamic system where an user can add his/her to-do works. The system dynamically generates list-items for every task. There is delete functionality available to delete the completed tasks. I have coded this system with 100% self-written JavaScript.",
+      link: "https://shahsaminyasar.github.io/todo-tasks",
+    },
+    {
+      image: "./media/unity_plate_ss.png",
+      name: "Unity Plate",
+      languages: `<span style="background-color: cyan">ReactJS</span>
+                  <span style="background-color: blue; color: white">NodeJS</span>
+                  <span style="background-color: green; color: white">MongoDB</span>
+                  <span style="background-color: rgb(217, 0, 65); color: pink">TailwindCSS</span>`,
+      desc: "Unity Plate is a MERN stack project of food donation campaigns where people can donate their extra food items/leftovers instead of throwing them. The project includes features like user registration, user dashboards, admin panel, dynamic data etc.",
+      link: "https://unity-plate.web.app",
     },
     {
       image: "./media/quiz_app_ss.png",
       name: "Quiz App",
       languages: `<span style="background-color: orangered">HTML</span>
                   <span style="background-color: rgb(9, 194, 255)">CSS</span>
-                  <span style="background-color: yellow">JS</span>`,
+                  <span style="background-color: yellow">JavaScript</span>`,
       desc: "A dynamic app where an user can give MCQ tests based on his lessons. I built it with vanilla JavaScript. A teacher can add as many questions as he/she wants and a student is able to select the topic and start the quiz/MCQ test anytime. The UI is completely user friendly with smooth transitions, animations and what not!",
       link: "https://shahsaminyasar.github.io/ssc2023",
     },
@@ -174,43 +200,44 @@ var portfolioContent = [
       name: "Quiz App - Type 2",
       languages: `<span style="background-color: orangered">HTML</span>
                   <span style="background-color: rgb(9, 194, 255)">CSS</span>
-                  <span style="background-color: yellow">JS</span>`,
+                  <span style="background-color: yellow">JavaScript</span>`,
       desc: "A dynamic app where an user can give MCQ tests based on his lessons. I built it with vanilla JavaScript. A teacher can add as many questions as he/she wants and a student is able to select the topic and start the quiz/MCQ test anytime. The UI is completely user friendly with smooth transitions, animations and what not!",
       link: "https://shahsaminyasar.github.io/quiz-app/",
-    },
-    {
-      image: "./media/blog_system_ss.png",
-      name: "PHP Blog System",
-      languages: `<span style="background-color: orangered">HTML</span>
-                  <span style="background-color: rgb(9, 194, 255)">CSS</span>
-                  <span style="background-color: royalblue">PHP</span>`,
-      desc: "I created this fully functional PHP blog system where users worldwide can write and upload posts on various topics. Admins have dedicated panels to write, edit, check, and delete posts. This system can serve as a professional blogging website for organizations/companies.",
-      link: "https://shahsaminyasar.github.io/portfolio/blog.html",
-    },
-    {
-      image: "./media/todo_tasks_app_ss.jpg",
-      name: "TODO Tasks",
-      languages: `<span style="background-color: orangered">HTML</span>
-                  <span style="background-color: rgb(9, 194, 255)">CSS</span>
-                  <span style="background-color: yellow">JS</span>`,
-      desc: "It is a dynamic system where an user can add his/her to-do works. The system dynamically generates list-items for every task. There is delete functionality available to delete the completed tasks. I have coded this system with 100% self-written JavaScript.",
-      link: "https://shahsaminyasar.github.io/todo-tasks",
     },
     {
       image: "./media/dragon_repeller_ss.jpg",
       name: "Dragon Repeller",
       languages: `<span style="background-color: orangered">HTML</span>
                   <span style="background-color: rgb(9, 194, 255)">CSS</span>
-                  <span style="background-color: yellow">JS</span>`,
-      desc: "Dragon Repeller is an RPG adventure game. In it, the player has to fight with monsters to gain the ability to fight with the dragon to win the game. The game has a shop, caves, and different monsters. The player has to keep up with his strength in game and earn coins to buy weapons from the shop. Overall, I hope you will enjoy playing it.",
+                  <span style="background-color: yellow">JavaScript</span>`,
+      desc: "Dragon Repeller is an RPG adventure game. In it, the player has to fight with monsters to gain the ability to fight with the dragon to win the game. The game has a shop, caves, and different monsters. The player has to keep up with his strength in game and earn coins to buy weapons from the shop.",
       link: "https://shahsaminyasar.github.io/dragon-repeller",
     },
+    {
+      image: "./media/libratech_ss.png",
+      name: "LibraTech",
+      languages: `<span style="background-color: cyan">ReactJS</span>
+                  <span style="background-color: blue; color: white">NodeJS</span>
+                  <span style="background-color: green; color: white">MongoDB</span>
+                  <span style="background-color: rgb(217, 0, 65); color: pink">TailwindCSS</span>`,
+      desc: "LibraTech is an online library management system built on ReactJS as the frontend, NodeJS and ExpressJS as the backend. Users can borrow books by providing a returning date. Librarians can add new books and modify the inventory. User registration/authentication supports 'Google Sign In' as well as email registration. Books can be searched based on categories/subjects and availability.",
+      link: "https://libra-tech.web.app",
+    },
+    // {
+    //   image: "./media/blog_system_ss.png",
+    //   name: "PHP Blog System",
+    //   languages: `<span style="background-color: orangered">HTML</span>
+    //               <span style="background-color: rgb(9, 194, 255)">CSS</span>
+    //               <span style="background-color: royalblue">PHP</span>`,
+    //   desc: "I created this fully functional PHP blog system where users can write and upload posts on various topics. Admins have dedicated panels to write, edit, check, and delete posts.",
+    //   link: "https://shahsaminyasar.github.io/portfolio/blog.html",
+    // },
     {
       image: "./media/foodie_ss.jpg",
       name: "Foodie",
       languages: `<span style="background-color: orangered">HTML</span>
                   <span style="background-color: rgb(9, 194, 255)">CSS</span>
-                  <span style="background-color: yellow">JS</span>`,
+                  <span style="background-color: yellow">JavaScript</span>`,
       desc: "A static restaurent website built from a PSD design. The website and it's components are fully responsive and perfectly made with no flaws. I can develop dynamic functional websites of such category/sector based on client's requirements.",
       link: "http://shahsaminyasar.github.io/foodie",
     },
@@ -219,7 +246,7 @@ var portfolioContent = [
       name: "Sayeman - Clone",
       languages: `<span style="background-color: orangered">HTML</span>
                   <span style="background-color: rgb(9, 194, 255)">CSS</span>
-                  <span style="background-color: yellow">JS</span>`,
+                  <span style="background-color: yellow">JavaScript</span>`,
       desc: "This is a cloned version that I made from the official website of Sayeman Resort. The main website was built with Wordpress and Elementor, whereas I built the clone version with HTML, CSS and JavaScript without any kind of change/modification of the content.",
       link: "https://shahsaminyasar.github.io/sayeman-clone",
     },

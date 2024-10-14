@@ -776,7 +776,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   gap: 60px;
 }
 
@@ -825,35 +825,59 @@ section {
 }
 
 .htmlCss {
-  width: 94%;
+  width: 95%;
 }
 
 .js {
-  width: 80%;
-}
-
-.php {
-  width: 65%;
+  width: 88%;
 }
 
 .reactjs {
   width: 90%;
 }
 
-.nodejs {
+.nodejsexpressjs {
+  width: 86%;
+}
+
+.mongodb {
   width: 83%;
+}
+
+.tailwindcss {
+  width: 97%;
+}
+
+.reactrouterdom {
+  width: 90%;
+}
+
+.axios {
+  width: 90%;
+}
+
+.tanstackquery {
+  width: 85%;
+}
+
+.php {
+  width: 55%;
+}
+
+.mysql {
+  width: 60%;
 }
 
 .wordpress {
   width: 85%;
 }
 
-.python {
-  width: 18%;
+.c {
+  width: 84%;
 }
 
-.c {
-  width: 78%;
+.python {
+  width: 42%;
 }
 
 /* Plus Skills */
@@ -1271,7 +1295,7 @@ section {
 
 .service_cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 3px;
   margin-top: 30px;
 }
@@ -1283,16 +1307,19 @@ section {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  transition: all 1.5s;
+  transition: all 0.5s;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .service_card:hover {
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.24);
 }
 
-.service_card:nth-child(4) {
+/* .service_card:nth-child(4) {
   grid-column: span 2;
-}
+} */
 
 .service_card_text h4 {
   width: 100%;
@@ -1349,7 +1376,7 @@ section {
 }
 
 .get_a_quote {
-  grid-row: span 2;
+  /* grid-row: span 2; */
   justify-content: center;
   align-items: center;
 }
