@@ -164,7 +164,7 @@ var portfolioContent = [
       languages: `<span style="background-color: orangered">HTML</span>
                   <span style="background-color: rgb(9, 194, 255)">CSS</span>
                   <span style="background-color: yellow">JavaScript</span>`,
-      desc: "Definify is an online dictionary app built on JavaScript which uses a dictionary api to serve users with an word's meanings, synonyms, antonyms, pronounciations, examples etc. in a very smooth and classy way with animations. I really want you to check it out once!",
+      desc: "Definify is an online dictionary app built on JavaScript which uses a dictionary API to serve users with any word's meanings, synonyms, antonyms, pronounciations, examples etc. in a very smooth and classy way with animations. I really want you to check it out once!",
       link: "https://shahsaminyasar.github.io/definify",
     },
     {
