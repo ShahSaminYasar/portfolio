@@ -32,6 +32,14 @@
       content="https://shahsaminyasar.github.io/portfolio"
     />
     <link rel="icon" type="image/x-icon" href="./media/favicon.jpg" />
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Satisfy&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    />
+
     <!-- Link Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -87,10 +95,12 @@
           autoplay
           muted
           loop
-          src="./media/bg_video1.mp4"
+          src="./media/bg_video2.mp4"
           id="bg_video"
         ></video>
-        <img src="./media/bg_static.jpg" alt="" id="bg_image" />
+
+        <img src="./media/bg_static2.png" alt="" id="bg_image" />
+
         <div class="two_sections">
           <section class="section">
             <h1 data-aos="fade-up" data-aos-offset="10" data-aos-duration="900">
@@ -106,13 +116,13 @@
               data-aos-delay="600"
               data-aos-duration="1000"
             >
-              I am a <span id="type_text">DEVELOPER</span>
+              I am a <span id="type_text"></span>
             </h2>
             <div class="buttons_group">
               <a href="#about" data-aos="fade-up">Know About Me</a>
               <a
                 href="./media/shah-samin-yasar_cv.jpg"
-                download
+                target="_blank"
                 data-aos="fade-up"
                 data-aos-delay="200"
                 >Download CV</a
@@ -181,9 +191,7 @@
                       <div class="carousel-item-content-text">
                         <h3>SKISC HSC25</h3>
                         <p>MERN stack LMS web app.</p>
-                        <button onclick="viewPortfolio(0, 0)">
-                          View Project
-                        </button>
+                        <button onclick="viewPortfolio(0, 0)">Details</button>
                       </div>
                     </div>
                   </div>
@@ -198,9 +206,7 @@
                       <div class="carousel-item-content-text">
                         <h3>Brave Education</h3>
                         <p>Full stack app for an agency.</p>
-                        <button onclick="viewPortfolio(0, 1)">
-                          View Project
-                        </button>
+                        <button onclick="viewPortfolio(0, 1)">Details</button>
                       </div>
                     </div>
                   </div>
@@ -217,9 +223,7 @@
                         <p>
                           MERN stack ecommerce website for a clothing store.
                         </p>
-                        <button onclick="viewPortfolio(0, 2)">
-                          View Project
-                        </button>
+                        <button onclick="viewPortfolio(0, 2)">Details</button>
                       </div>
                     </div>
                   </div>
@@ -237,9 +241,7 @@
                           An online dictionary web app built with vanilla
                           JavaScript.
                         </p>
-                        <button onclick="viewPortfolio(0, 3)">
-                          View Project
-                        </button>
+                        <button onclick="viewPortfolio(0, 3)">Details</button>
                       </div>
                     </div>
                   </div>
@@ -293,6 +295,12 @@
             </div>
           </section>
         </div>
+
+        <img
+          src="./media/scroll-down-icon.png"
+          class="scroll-down-icon"
+          alt="scroll down indicator"
+        />
       </section>
 
       <!-- About Section -->
@@ -330,7 +338,7 @@
       </section>
 
       <!-- Skills Section -->
-      <section id="skills">
+      <!-- <section id="skills">
         <div class="container">
           <div class="section">
             <img src="./media/skills.svg" alt="" data-aos="fade-right" />
@@ -340,7 +348,7 @@
               My <span class="section_title_highlight">Skills</span>
             </h2>
             <div class="skills_container">
-              <!-- HTML-CSS -->
+              
               <div class="skill_container" data-aos="fade-up">
                 <div class="skill_text">
                   <span>HTML/CSS</span>
@@ -351,7 +359,7 @@
                 </div>
               </div>
 
-              <!-- JS -->
+              
               <div class="skill_container" data-aos="fade-up">
                 <div class="skill_text">
                   <span>JavaScript</span>
@@ -362,7 +370,7 @@
                 </div>
               </div>
 
-              <!-- ReactJS -->
+              
               <div class="skill_container" data-aos="fade-up">
                 <div class="skill_text">
                   <span>ReactJS</span>
@@ -373,7 +381,7 @@
                 </div>
               </div>
 
-              <!-- NodeJS-ExpressJS -->
+              
               <div class="skill_container" data-aos="fade-up">
                 <div class="skill_text">
                   <span>NodeJS/ExpressJS</span>
@@ -384,7 +392,7 @@
                 </div>
               </div>
 
-              <!-- MongoDB -->
+              
               <div class="skill_container" data-aos="fade-up">
                 <div class="skill_text">
                   <span>MongoDB</span>
@@ -395,7 +403,7 @@
                 </div>
               </div>
 
-              <!-- Tailwind CSS -->
+              
               <div class="skill_container" data-aos="fade-up">
                 <div class="skill_text">
                   <span>Tailwind CSS</span>
@@ -406,7 +414,7 @@
                 </div>
               </div>
 
-              <!-- React Router DOM -->
+              
               <div class="skill_container" data-aos="fade-up">
                 <div class="skill_text">
                   <span>React Router DOM</span>
@@ -417,7 +425,7 @@
                 </div>
               </div>
 
-              <!-- Axios -->
+              
               <div class="skill_container" data-aos="fade-up">
                 <div class="skill_text">
                   <span>Axios</span>
@@ -428,7 +436,7 @@
                 </div>
               </div>
 
-              <!-- TanStack Query -->
+              
               <div class="skill_container" data-aos="fade-up">
                 <div class="skill_text">
                   <span>TanStack Query</span>
@@ -439,7 +447,7 @@
                 </div>
               </div>
 
-              <!-- PHP -->
+              
               <div class="skill_container" data-aos="fade-up">
                 <div class="skill_text">
                   <span>PhP</span>
@@ -450,7 +458,7 @@
                 </div>
               </div>
 
-              <!-- MySQL -->
+              
               <div class="skill_container" data-aos="fade-up">
                 <div class="skill_text">
                   <span>MySQL</span>
@@ -461,7 +469,7 @@
                 </div>
               </div>
 
-              <!-- Wordpress -->
+              
               <div class="skill_container" data-aos="fade-up">
                 <div class="skill_text">
                   <span>Wordpress</span>
@@ -472,7 +480,7 @@
                 </div>
               </div>
 
-              <!-- C -->
+              
               <div class="skill_container" data-aos="fade-up">
                 <div class="skill_text">
                   <span>C</span>
@@ -483,7 +491,7 @@
                 </div>
               </div>
 
-              <!-- Python -->
+              
               <div class="skill_container" data-aos="fade-up">
                 <div class="skill_text">
                   <span>Python</span>
@@ -492,6 +500,126 @@
                 <div class="skill_bar_container">
                   <span class="skill_bar python"></span>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Skills Section (New) -->
+      <section id="skills">
+        <div class="container">
+          <h2 class="section_title">
+            I <span class="section_title_highlight">specialize</span> in...
+          </h2>
+
+          <!-- Skill Cards -->
+          <div class="skill_cards">
+            <!-- Skill Card -->
+            <div class="skill_card" data-aos="fade-up">
+              <img src="./media/icons/ReactJS.png" alt="ReactJS Logo" />
+              <div>
+                <span>ReactJS</span>
+                <span>JavaScript Library</span>
+              </div>
+            </div>
+
+            <!-- Skill Card -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
+              <img src="./media/icons/nextJS.png" alt="NextJS Logo" />
+              <div>
+                <span>NextJS</span>
+                <span>Web Framework</span>
+              </div>
+            </div>
+
+            <!-- Skill Card -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
+              <img src="./media/icons/mongoDB.png" alt="MongoDB Logo" />
+              <div>
+                <span>MongoDB</span>
+                <span>NoSQL Database</span>
+              </div>
+            </div>
+
+            <!-- Skill Card -->
+            <div class="skill_card" data-aos="fade-up">
+              <img src="./media/icons/expressJS.png" alt="ExpressJS Logo" />
+              <div>
+                <span>ExpressJS</span>
+                <span>Node.js Framework</span>
+              </div>
+            </div>
+
+            <!-- Skill Card -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
+              <img src="./media/icons/nodeJS.png" alt="NodeJS Logo" />
+              <div>
+                <span>NodeJS</span>
+                <span>Runtime Environment</span>
+              </div>
+            </div>
+
+            <!-- Skill Card -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
+              <img src="./media/icons/js.png" alt="JavaScript Logo" />
+              <div>
+                <span>JavaScript</span>
+                <span>Programming Language</span>
+              </div>
+            </div>
+
+            <!-- Skill Card -->
+            <div class="skill_card" data-aos="fade-up">
+              <img src="./media/icons/php.png" alt="PHP Logo" />
+              <div>
+                <span>PHP</span>
+                <span>Programming Language</span>
+              </div>
+            </div>
+
+            <!-- Skill Card -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
+              <img src="./media/icons/python.png" alt="Python Logo" />
+              <div>
+                <span>Python</span>
+                <span>Programming Language</span>
+              </div>
+            </div>
+
+            <!-- Skill Card -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
+              <img src="./media/icons/c.png" alt="C Logo" />
+              <div>
+                <span>C</span>
+                <span>Programming Language</span>
+              </div>
+            </div>
+
+            <!-- Skill Card -->
+            <div class="skill_card" data-aos="fade-up">
+              <img src="./media/icons/tailwindcss.png" alt="TailwindCSS Logo" />
+              <div>
+                <span>TailwindCSS</span>
+                <span>CSS Framework</span>
+              </div>
+            </div>
+
+            <!-- Skill Card -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
+              <img src="./media/icons/wordpress.png" alt="Wordpress Logo" />
+              <div>
+                <span>WordPress</span>
+                <span>Content Management System (CMS)</span>
+              </div>
+            </div>
+
+            <!-- Skill Card -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
+              <img src="./media/icons/mySQL.png" alt="MySQL Logo" />
+              <div>
+                <span>MySQL</span>
+                <span>Relational DB Management System (RDBMS)</span>
               </div>
             </div>
           </div>
@@ -1004,30 +1132,61 @@
           <!-- Social Handles -->
           <div class="social_handles">
             <a
+              href="https://github.com/ShahSaminYasar"
+              target="_blank"
+              data-aos="fade-up"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
               href="https://instagram.com/shah_samin_yasar"
               target="_blank"
               data-aos="fade-up"
+              data-aos-delay="100"
               ><i class="fa-brands fa-instagram"></i
             ></a>
             <a
               href="https://facebook.com/shahsaminyasar"
               target="_blank"
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="200"
               ><i class="fa-brands fa-facebook-f"></i
             ></a>
             <a
-              href="https://bd.linkedin.com/in/shah-samin-yasar-undefined-478405263"
+              href="https://www.linkedin.com/in/shah-samin-yasar/"
               target="_blank"
               data-aos="fade-up"
-              data-aos-delay="200"
+              data-aos-delay="300"
               ><i class="fa-brands fa-linkedin-in"></i
             ></a>
-            <a href="#" data-aos="fade-up" data-aos-delay="300"
-              ><i class="fa-brands fa-whatsapp"></i
+            <a
+              href="https://t.me/shahsaminyasar"
+              target="_blank"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              ><i class="fa-brands fa-telegram"></i
             ></a>
           </div>
         </div>
+
+        <!-- Email -->
+        <span
+          style="
+            display: block;
+            text-align: center;
+            padding: 40px 10px 0px;
+            color: white;
+            font-weight: bold;
+          "
+          data-aos="fade"
+          data-aos-delay="300"
+        >
+          ✉:
+          <a
+            href="mailto:shahsaminyasar@yahoo.com"
+            style="color: #00c3ff; text-decoration: none; font-size: 18px"
+            >shahsaminyasar@yahoo.com</a
+          >
+        </span>
       </section>
 
       <!-- Cursor -->
@@ -1053,9 +1212,9 @@
         <div>
           <h4>View some live projects</h4>
           <div class="footerProjectButtons">
-            <button onclick="viewPortfolio(0, 2)">Unity Plate</button>
-            <button onclick="viewPortfolio(0, 7)">TODO Tasks</button>
+            <button onclick="viewPortfolio(0, 3)">Definify</button>
             <button onclick="viewPortfolio(0, 0)">SKISC HSC-25</button>
+            <button onclick="viewPortfolio(0, 1)">Brave Education</button>
           </div>
         </div>
         <span>Copyright &copy; 2024 SHAH SAMIN YASAR</span>
@@ -1075,7 +1234,7 @@
     <!-- Setup and start animation! -->
     <script>
       var typed = new Typed("#type_text", {
-        strings: ["DEVELOPER", "DESIGNER", "TECH ARCHITECT"],
+        strings: ["MERN Stack PRO", "DEVELOPER", "TECH ARCHITECT"],
         typeSpeed: 40,
         backSpeed: 40,
         loop: true,

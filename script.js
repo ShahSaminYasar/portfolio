@@ -91,26 +91,53 @@ function typeText() {
   // const logos = document.querySelector(".logos_container").cloneNode(true);
   // document.querySelector(".logos_carousel_inner").append(logos);
 
-  var text =
-    "Hey there, Boss! Buckle up for a thrilling introduction to the web-savvy college student who's been bitten by the coding bug. I've poured countless hours into honing my skills, crafting pixel-perfect websites that leave users in awe. Ready to inject a massive WOW factor into the online world? Let's dive into this exciting journey together!";
-  frontAboutText.textContent = "";
+  // var text =
+  //   "Hey there, Boss! Buckle up for a thrilling introduction to the web-savvy college student who's been bitten by the coding bug. I've poured countless hours into honing my skills, crafting pixel-perfect websites that leave users in awe. Ready to inject a massive WOW factor into the online world? Let's dive into this exciting journey together!";
+  var text = `printing details ... ... ...`;
+  frontAboutText.innerHTML = "";
+
   var index = 0;
   setTimeout(() => {
     const typeEffectInterval = setInterval(() => {
       if (index < text.length) {
-        frontAboutText.textContent += text.charAt(index);
+        frontAboutText.innerHTML += text.charAt(index);
         index++;
       } else {
         clearInterval(typeEffectInterval);
-        bgVideo.style.display = "initial";
-        bgImage.style.display = "none";
+        frontAboutText.innerHTML = `Name: Shah Samin Yasar<br/>
+          Age: 18 years<br/>
+          📍: Sylhet, Bangladesh<br/>
+          🏫: College Year 2 (2024)<br/>
+          💪🏻: MERN Stack<br/>
+          ❤: 👩🏻‍💻, 🚴🏻‍♂️, 📷<br/>
+          Projects: <button onclick="toggleCategory(event)" data-category="2" style="underline; background: transparent; border: none; font-family: 'Ubuntu Mono', sans-serif; font-size: 18px; color: #ffffff; font-weight: bold; margin: 10px 0px;">Click Here</button>
+          <br/>
+          ✉: <a href="mailto:shahsaminyasar@yahoo.com"  style="color: white; text-decoration: none; font-size: 16px;">shahsaminyasar@yahoo.com</a>
+          <br/>
+          <div style="margin-bottom: 15px"></div>
+          🔗: <a href="https://github.com/shahsaminyasar" target="_blank" class="front_social_link">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://instagram.com/shah_samin_yasar" target="_blank" class="front_social_link">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://facebook.com/shahsaminyasar" target="_blank" class="front_social_link">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/shah-samin-yasar/" target="_blank" class="front_social_link">
+            <i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://t.me/shahsaminyasar" target="_blank" class="front_social_link">
+            <i class="fa-brands fa-telegram"></i>
+          </a>`;
       }
-    }, 10);
-  }, 3700);
+    }, 40);
+  }, 3400);
 }
 
 function toggleCategory(e) {
-  const clickedToggleButton = e.target;
+  const clickedToggleButton = document.querySelector(
+    `#toggle_button${e.target.dataset.category}`
+  );
   toggleButtons.forEach((toggleButton) => {
     toggleButton.classList.remove("active");
   });
@@ -195,15 +222,15 @@ var portfolioContent = [
       desc: "A dynamic app where an user can give MCQ tests based on his lessons. I built it with vanilla JavaScript. A teacher can add as many questions as he/she wants and a student is able to select the topic and start the quiz/MCQ test anytime. The UI is completely user friendly with smooth transitions, animations and what not!",
       link: "https://shahsaminyasar.github.io/ssc2023",
     },
-    {
-      image: "./media/quiz_app_type2_ss.png",
-      name: "Quiz App - Type 2",
-      languages: `<span style="background-color: orangered">HTML</span>
-                  <span style="background-color: rgb(9, 194, 255)">CSS</span>
-                  <span style="background-color: yellow">JavaScript</span>`,
-      desc: "A dynamic app where an user can give MCQ tests based on his lessons. I built it with vanilla JavaScript. A teacher can add as many questions as he/she wants and a student is able to select the topic and start the quiz/MCQ test anytime. The UI is completely user friendly with smooth transitions, animations and what not!",
-      link: "https://shahsaminyasar.github.io/quiz-app/",
-    },
+    // {
+    //   image: "./media/quiz_app_type2_ss.png",
+    //   name: "Quiz App - Type 2",
+    //   languages: `<span style="background-color: orangered">HTML</span>
+    //               <span style="background-color: rgb(9, 194, 255)">CSS</span>
+    //               <span style="background-color: yellow">JavaScript</span>`,
+    //   desc: "A dynamic app where an user can give MCQ tests based on his lessons. I built it with vanilla JavaScript. A teacher can add as many questions as he/she wants and a student is able to select the topic and start the quiz/MCQ test anytime. The UI is completely user friendly with smooth transitions, animations and what not!",
+    //   link: "https://shahsaminyasar.github.io/quiz-app/",
+    // },
     {
       image: "./media/dragon_repeller_ss.jpg",
       name: "Dragon Repeller",
@@ -213,16 +240,16 @@ var portfolioContent = [
       desc: "Dragon Repeller is an RPG adventure game. In it, the player has to fight with monsters to gain the ability to fight with the dragon to win the game. The game has a shop, caves, and different monsters. The player has to keep up with his strength in game and earn coins to buy weapons from the shop.",
       link: "https://shahsaminyasar.github.io/dragon-repeller",
     },
-    {
-      image: "./media/libratech_ss.png",
-      name: "LibraTech",
-      languages: `<span style="background-color: cyan">ReactJS</span>
-                  <span style="background-color: blue; color: white">NodeJS</span>
-                  <span style="background-color: green; color: white">MongoDB</span>
-                  <span style="background-color: rgb(217, 0, 65); color: pink">TailwindCSS</span>`,
-      desc: "LibraTech is an online library management system built on ReactJS as the frontend, NodeJS and ExpressJS as the backend. Users can borrow books by providing a returning date. Librarians can add new books and modify the inventory. User registration/authentication supports 'Google Sign In' as well as email registration. Books can be searched based on categories/subjects and availability.",
-      link: "https://libra-tech.web.app",
-    },
+    // {
+    //   image: "./media/libratech_ss.png",
+    //   name: "LibraTech",
+    //   languages: `<span style="background-color: cyan">ReactJS</span>
+    //               <span style="background-color: blue; color: white">NodeJS</span>
+    //               <span style="background-color: green; color: white">MongoDB</span>
+    //               <span style="background-color: rgb(217, 0, 65); color: pink">TailwindCSS</span>`,
+    //   desc: "LibraTech is an online library management system built on ReactJS as the frontend, NodeJS and ExpressJS as the backend. Users can borrow books by providing a returning date. Librarians can add new books and modify the inventory. User registration/authentication supports 'Google Sign In' as well as email registration. Books can be searched based on categories/subjects and availability.",
+    //   link: "https://libra-tech.web.app",
+    // },
     // {
     //   image: "./media/blog_system_ss.png",
     //   name: "PHP Blog System",
@@ -232,15 +259,15 @@ var portfolioContent = [
     //   desc: "I created this fully functional PHP blog system where users can write and upload posts on various topics. Admins have dedicated panels to write, edit, check, and delete posts.",
     //   link: "https://shahsaminyasar.github.io/portfolio/blog.html",
     // },
-    {
-      image: "./media/foodie_ss.jpg",
-      name: "Foodie",
-      languages: `<span style="background-color: orangered">HTML</span>
-                  <span style="background-color: rgb(9, 194, 255)">CSS</span>
-                  <span style="background-color: yellow">JavaScript</span>`,
-      desc: "A static restaurent website built from a PSD design. The website and it's components are fully responsive and perfectly made with no flaws. I can develop dynamic functional websites of such category/sector based on client's requirements.",
-      link: "http://shahsaminyasar.github.io/foodie",
-    },
+    // {
+    //   image: "./media/foodie_ss.jpg",
+    //   name: "Foodie",
+    //   languages: `<span style="background-color: orangered">HTML</span>
+    //               <span style="background-color: rgb(9, 194, 255)">CSS</span>
+    //               <span style="background-color: yellow">JavaScript</span>`,
+    //   desc: "A static restaurent website built from a PSD design. The website and it's components are fully responsive and perfectly made with no flaws. I can develop dynamic functional websites of such category/sector based on client's requirements.",
+    //   link: "http://shahsaminyasar.github.io/foodie",
+    // },
     {
       image: "./media/sayeman_clone_ss.png",
       name: "Sayeman - Clone",
@@ -262,6 +289,10 @@ var portfolioContent = [
   ],
   [
     {
+      thumbnail: "./media/portfolio/pv5.jpg",
+      link: "https://www.youtube.com/embed/F7rXkJm-Iyo?autoplay=1",
+    },
+    {
       thumbnail: "./media/portfolio/pv1.jpg",
       link: "https://www.youtube.com/embed/oijf4qE1Izw?autoplay=1",
     },
@@ -276,10 +307,6 @@ var portfolioContent = [
     {
       thumbnail: "./media/portfolio/pv4.jpg",
       link: "https://www.youtube.com/embed/6nQTmS_BDcE?autoplay=1",
-    },
-    {
-      thumbnail: "./media/portfolio/pv5.jpg",
-      link: "https://www.youtube.com/embed/F7rXkJm-Iyo?autoplay=1",
     },
     {
       thumbnail: "./media/portfolio/pv6.jpg",
