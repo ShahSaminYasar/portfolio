@@ -111,7 +111,7 @@ function typeText() {
           📍: Sylhet, Bangladesh<br/>
           🏫: College Year 2 (2024)<br/>
           💪🏻: MERN Stack<br/>
-          ❤: 👩🏻‍💻, 🚴🏻‍♂️, 📷<br/>
+          ❤: 💻, 🚴🏻‍♂️, 📷<br/>
           Projects: <button onclick="toggleCategory(event)" data-category="2" style="underline; background: transparent; border: none; font-family: 'Ubuntu Mono', sans-serif; font-size: 18px; color: #ffffff; font-weight: bold; margin: 10px 0px;">Click Here</button>
           <br/>
           ✉: <a href="mailto:shahsaminyasar@yahoo.com"  style="color: white; text-decoration: none; font-size: 16px;">shahsaminyasar@yahoo.com</a>
