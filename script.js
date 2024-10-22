@@ -135,7 +135,7 @@ function typeText() {
         bgImage.style.display = "none";
       }
     }, 40);
-  }, 3400);
+  }, 1500);
 }
 
 function toggleCategory(e) {
