@@ -305,7 +305,7 @@ a > i:hover {
   z-index: -1;
 }
 
-#bg_image {
+/* #bg_image {
   animation: bgImageAnimation 30s ease-in-out infinite;
 }
 
@@ -319,7 +319,7 @@ a > i:hover {
   100% {
     transform: scale(1);
   }
-}
+} */
 
 .scroll-down-icon {
   position: absolute;

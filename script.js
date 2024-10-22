@@ -84,6 +84,8 @@ navlink.forEach((navlink) => {
   });
 });
 
+bgVideo.addEventListener("canplay", () => {});
+
 function typeText() {
   bgVideo.style.display = "none";
   bgImage.style.display = "initial";
@@ -129,6 +131,8 @@ function typeText() {
           <a href="https://t.me/shahsaminyasar" target="_blank" class="front_social_link">
             <i class="fa-brands fa-telegram"></i>
           </a>`;
+        bgVideo.style.display = "initial";
+        bgImage.style.display = "none";
       }
     }, 40);
   }, 3400);
