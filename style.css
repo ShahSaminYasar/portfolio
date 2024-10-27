@@ -132,6 +132,10 @@ a > i:hover {
   margin-bottom: 0;
 }
 
+.text_highlight{
+  color: #00c3ff;
+}
+
 .loading_text {
   font-family: "Ubuntu Mono", sans-serif;
   font-size: 1.2rem;
@@ -303,6 +307,14 @@ a > i:hover {
   right: 0;
   bottom: 0;
   z-index: -1;
+}
+
+#bg_video {
+  display: none;
+}
+
+#bg_image {
+  display: block;
 }
 
 /* #bg_image {
