@@ -84,11 +84,14 @@ navlink.forEach((navlink) => {
   });
 });
 
-bgVideo.addEventListener("canplay", () => {});
+bgVideo.addEventListener("canplay", () => {
+  bgVideo.style.display = "initial";
+  bgImage.style.display = "none";
+});
 
 function typeText() {
-  bgVideo.style.display = "none";
-  bgImage.style.display = "initial";
+  // bgVideo.style.display = "none";
+  // bgImage.style.display = "initial";
 
   // const logos = document.querySelector(".logos_container").cloneNode(true);
   // document.querySelector(".logos_carousel_inner").append(logos);
@@ -131,8 +134,6 @@ function typeText() {
           <a href="https://t.me/shahsaminyasar" target="_blank" class="front_social_link">
             <i class="fa-brands fa-telegram"></i>
           </a>`;
-        bgVideo.style.display = "initial";
-        bgImage.style.display = "none";
       }
     }, 40);
   }, 1500);
