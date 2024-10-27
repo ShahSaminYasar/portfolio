@@ -85,13 +85,14 @@ navlink.forEach((navlink) => {
 });
 
 bgVideo.addEventListener("canplay", () => {
-  bgVideo.style.display = "initial";
+  console.log("transitioned.");
+  bgVideo.style.display = "block";
   bgImage.style.display = "none";
 });
 
 function typeText() {
-  // bgVideo.style.display = "none";
-  // bgImage.style.display = "initial";
+  bgVideo.style.display = "none";
+  bgImage.style.display = "block";
 
   // const logos = document.querySelector(".logos_container").cloneNode(true);
   // document.querySelector(".logos_carousel_inner").append(logos);
