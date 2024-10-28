@@ -84,10 +84,12 @@ navlink.forEach((navlink) => {
   });
 });
 
-bgVideo.addEventListener("canplay", () => {
-  console.log("transitioned.");
-  bgVideo.style.display = "block";
-  bgImage.style.display = "none";
+document.addEventListener("DOMContentLoaded", () => {
+  bgVideo.addEventListener("canplay", () => {
+    console.log("transitioned.");
+    bgVideo.style.display = "block";
+    bgImage.style.display = "none";
+  });
 });
 
 function typeText() {
